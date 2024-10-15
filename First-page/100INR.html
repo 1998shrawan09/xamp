@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Amount and Button</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="bottom.css">
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        #greendiv {
+            color: green;
+            padding: 15px;
+        }
+        #playBtn {
+            padding: 5px;
+            border-radius: 5px;
+            color: white;
+        }
+        button:disabled {
+            background-color: gray;
+            cursor: not-allowed;
+        }
+        .choice {
+            background-color: #457c62;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50%;
+        }
+        #result {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: green;
+        }
+        .oneandtwo {
+            color: green;
+        }
+        .select {
+            background-color: transparent;
+            color: rgb(120, 130, 134);
+            padding: 15px;
+            position: relative;
+        }
+        .select label {
+            position: absolute;
+            color: #ff0000;
+            font-weight: bolder;
+            cursor: pointer;
+            transform: translate(40px, 45px);
+            transform-origin: center;
+        }
+        .select input {
+            background-color: #87129e;
+            color: #00aeff;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        .INR {
+            color: green;
+        }
+        .container {
+            background-color: #e5efe9;
+            font-weight: bolder;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .whatsapp {
+            color: green;
+            font-size: 40px;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            bottom: 70px;
+            left: 47%;
+            cursor: pointer;
+        }
+        .whatsapp a {
+            text-decoration: none;
+            color: green;
+        }
+        .whatsapp label {
+            cursor: pointer;
+            font-size: 20px;
+            color: green;
+        }
+        .History {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Historyp {
+            background-color: #a0d6b48e;
+            width: 80vw;
+            height: 120px;
+            margin: 0 auto;
+            border: 1px solid grey;
+            overflow-y: scroll;
+            border-radius: 10px;
+        }
+        .Historyp p{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+        }
+        @media (max-width:768px){
+            .History {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .Historyp p{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+        }
+        .Historyp {
+            background-color: #a0d6b48e;
+            width: 80vw;
+            height: 80px;
+            margin: 0 auto;
+            border: 1px solid grey;
+            overflow-y: scroll;
+            border-radius: 10px;
+        }
+        }
+        @media (max-width:425px){
+            .History {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .Historyp p{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            font-size: 12px;
+
+        }
+        .Historyp {
+            background-color: #a0d6b48e;
+            width: 80vw;
+            height: 50px;
+            margin: 0 auto;
+            border: 1px solid grey;
+            overflow-y: scroll;
+            border-radius: 10px;
+        }
+        }
+        @media (max-width:320px){
+            .History {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .Historyp p{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+            font-size: 8px;
+
+        }
+        .Historyp {
+            background-color: #a0d6b48e;
+            width: 80vw;
+            height: 50px;
+            margin: 0 auto;
+            border: 1px solid grey;
+            overflow-y: scroll;
+            border-radius: 10px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <p>Amount: <span id="amount" class="INR">100</span> <span class="INR"><i class="fa-solid fa-indian-rupee-sign"></i></span></p>
+
+            <span id="num1">0</span> <span> + </span> <span id="num2">0</span> <span> = </span>  <span class="oneandtwo">0</span>
+
+            <div class="select">
+                <label for="chek1" class="chekdiv1"><span>SM</span></label>
+                <input type="radio" id="chek1" name="onechek" value="small">
+
+                <label for="chek2" class="chekdiv2"><span>BIG</span></label>
+                <input type="radio" id="chek2" name="onechek" value="big">
+            </div>
+
+            <div id="greendiv"></div>
+
+            <p id="choices">
+                <button class="choice" value="10" disabled>10</button>
+                <button class="choice" value="20" disabled>20</button>
+                <button class="choice" value="30" disabled>30</button>
+                <button class="choice" value="50" disabled>50</button>
+            </p>
+
+            <p id="result"></p>
+
+            <button id="playBtn" disabled onclick="showNumbers()"> Play Game </button>
+        </div>
+
+        <div class="History">
+            <div class="Historyp" id="historyContainer">
+                <!-- History data will be appended here -->
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        
+        <div class="icon-container">
+            <div class="icon">
+                <a href="page1.html">
+                    <span class="cheng1"><i class="fa-solid fa-magnifying-glass"></i></span> <br>
+                    <span class="cheng11">Search</span> 
+                </a> 
+            </div>
+            <div class="icon">
+                <a href="100INR.html">
+                    <span  class="cheng2"><i class="fa-solid fa-trophy"></i></span> <br>
+                    <span class="cheng22">Win</span> 
+                </a>
+            </div>
+            <div class="icon">
+                <a href="dashboard.php">
+                <span  class="cheng3"><i class="fa-solid fa-house-user"></i></span> <br>
+                <span class="cheng33">Home</span>  
+                </a>
+            </div>
+        </div>
+
+
+    </footer>  <!-- End footer -->
+
+    <script>
+        let totalAmount = 100; 
+        let selectedBets = [];
+        let selectedChoice = '';
+
+        const select = document.querySelectorAll(".select input[name='onechek']");
+        const CHOICE = document.querySelectorAll(".choice");
+        const AmountSpan = document.getElementById('amount');
+        const playBtn = document.getElementById('playBtn');
+        const greendiv = document.getElementById('greendiv');
+        const numberArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        const Two = document.querySelector(".oneandtwo");
+        const historyContainer = document.getElementById('historyContainer');
+
+        // Disable or enable choice buttons based on total amount
+        function updateChoiceButtonStates() {
+            CHOICE.forEach(button => {
+                let betAmount = Number(button.value);
+                let totalINR = Number(AmountSpan.textContent);
+
+                if (betAmount > totalINR) {
+                    button.disabled = true;
+                    button.style.backgroundColor = "gray";
+                } else {
+                    button.disabled = false;
+                    button.style.backgroundColor = "#457c62";
+                    button.style.cursor = "pointer";
+                }
+            });
+            // const  TotalBetAmount = greendiv.textContent;
+           
+
+        }
+
+        // Function to generate random numbers, display them, and show the greater one
+        function showNumbers() {
+            let randomIndex1 = Math.floor(Math.random() * numberArray.length);
+            let randomIndex2;
+            do {
+                randomIndex2 = Math.floor(Math.random() * numberArray.length);
+            } while (randomIndex1 === randomIndex2);
+
+            let randomNum1 = numberArray[randomIndex1];
+            let randomNum2 = numberArray[randomIndex2];
+
+            document.getElementById('num1').textContent = randomNum1;
+            document.getElementById('num2').textContent = randomNum2;
+
+            let mainresult = randomNum1 + randomNum2;
+            Two.textContent = mainresult;
+
+           
+            let resultParagraph = document.getElementById('result');
+            let totalINR = Number(AmountSpan.textContent);
+            let gameResult = '';
+
+            // Determine the game result (win or lose)
+            if (mainresult >= 10) {
+                resultParagraph.textContent = `BIG: ${mainresult}`;
+                gameResult = selectedChoice === 'big' ? 'Winn' : 'Loss';
+                if (selectedChoice === 'big') {
+                    selectedBets.forEach(bet => {
+                        totalINR += bet * 1.95;
+                    });
+                }
+            } else {
+                resultParagraph.textContent = `SMALL: ${mainresult}`;
+                gameResult = selectedChoice === 'small' ? 'Winn' : 'Loss';
+                if (selectedChoice === 'small') {
+                    selectedBets.forEach(bet => {
+                        totalINR += bet * 1.95;
+                    });
+                }
+            }
+
+            AmountSpan.textContent = totalINR;
+
+            let betAmount = greendiv.textContent;
+
+            updateChoiceButtonStates();
+            greendiv.textContent = "";
+            playBtn.disabled = true;
+            playBtn.style.background = "gray";
+            selectedBets = [];
+
+            // Update the game history
+            addHistoryEntry(betAmount, randomNum1, randomNum2, selectedChoice, gameResult);
+            
+           
+        }
+
+        // Function to add a history entry
+        function addHistoryEntry(betAmount, randomNum1, randomNum2, choice, result) {
+            let NumSum = randomNum1 + randomNum2;
+            let historyEntry = `
+                <p> <span> Total-Bet-Amount=${betAmount}</span> <span>${randomNum1}+${randomNum2}=${NumSum}</span> <span>Select: ${choice}</span> <span>Result: ${result}</span></p>
+            `;
+            historyContainer.innerHTML += historyEntry;     
+        }
+
+        // Listen for choice button clicks
+        CHOICE.forEach((element) => {
+            element.addEventListener("click", function() {
+                let currentAmount = Number(greendiv.textContent) || 0;
+                let betAmount = Number(element.value);
+                let totalINR = Number(AmountSpan.textContent);
+
+                if (betAmount > totalINR) {
+                    element.disabled = true;
+                    element.style.backgroundColor = "gray";
+                    return;
+                }
+
+                selectedBets.push(betAmount);
+                greendiv.textContent = currentAmount + betAmount;
+                playBtn.disabled = false;
+                playBtn.style.background = "#457c62";
+                playBtn.style.cursor = "pointer";
+
+                let totalupdateINR = totalINR - betAmount;
+                AmountSpan.textContent = totalupdateINR;
+
+                updateChoiceButtonStates();
+            });
+        });
+
+        // Enable choice buttons when a radio button is selected
+        select.forEach((radio) => {
+            radio.addEventListener('change', (event) => {
+                selectedChoice = event.target.value;
+                updateChoiceButtonStates();
+            });
+        });
+    </script>
+</body>
+</html>

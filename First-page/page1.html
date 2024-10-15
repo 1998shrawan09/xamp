@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="bottom.css">
+    <style>
+
+        main{
+            height: calc(100% - 50px - 60px);
+            background-color: #b6d1c0;
+        }
+        .card {
+            width: 100%; /* Set width relative to its parent column */
+            height: 100%; /* Stretch height to match */
+            transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Align content to the center horizontally */
+            justify-content: center; /* Align content vertically */
+            cursor: pointer;
+        }
+        
+        /* Ensure all cards have the same height */
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .card img{
+            width: auto;
+            height: 125px;
+        }
+
+        /* Set a fixed height for all images and center them */
+        .card-img-top {
+            height: 150px; /* Adjust this based on your image ratio */
+            object-fit: cover; /* Maintain image aspect ratio */
+            width: 100%;
+            max-width: 150px; /* Optional, can adjust based on image size */
+        }
+
+        /* Hover effect */
+        .card:hover {
+            transform: scale(1.05); /* Slightly enlarge the card */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+        }
+
+        /* Make sure all cards and columns are consistently aligned */
+        .col-6 {
+            padding-bottom: 15px; /* Add spacing between rows on smaller screens */
+        }
+    </style>
+</head>
+<body>
+    <main>
+
+        <div class="container pt-4">
+
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j1.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Diamond Ring</h5>
+                            <p class="card-text text-success">150$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j2.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">Min. 35% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j9.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">250$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j17.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Bag</h5>
+                            <p class="card-text text-success">350$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j5.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Wash</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j12.png" class="card-img-top" alt="Women's Ethnic Sets">
+                       
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">550$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j7.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Wash & Beauty</h5>
+                            <p class="card-text text-success">Min. 65% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j1111.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Diamond Ring</h5>
+                            <p class="card-text text-success">230$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j3.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Black Necklace</h5>
+                            <p class="card-text text-success">180$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j10.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">Min. 90% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j111.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Diamond Ring</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j2.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">340$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j21.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessin Stich 2*</h5>
+                            <p class="card-text text-success">260$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j14.png" class="card-img-top" alt="DSLR & Mirrorless" style="width: 130px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Camera</h5>
+                            <p class="card-text text-success">150$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j18.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Bag</h5>
+                            <p class="card-text text-success">Min. 50% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j16.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Baby Product</h5>
+                            <p class="card-text text-success">310$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j4.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Bottle of Medicine</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j6.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Beauty Product</h5>
+                            <p class="card-text text-success">290$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j6.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Beauty Product</h5>
+                            <p class="card-text text-success">Min. 75% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j20.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">240$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j21.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessin Stich 6*</h5>
+                            <p class="card-text text-success">610$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j22.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">Min. 45% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j1111.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Diamond Ring</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j222.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">190$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j17.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Bag</h5>
+                            <p class="card-text text-success">240$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j23.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessin Stich 11*</h5>
+                            <p class="card-text text-success">470$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j9.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">Min. 65% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j4.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Bottle of Medicine</h5>
+                            <p class="card-text text-success">310$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j5.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Wash</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j6.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Beauty Product</h5>
+                            <p class="card-text text-success">660$/-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="container pt-4">
+        
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j1.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Diamond Ring</h5>
+                            <p class="card-text text-success">150$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j2.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">Min. 35% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j9.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">250$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j17.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Bag</h5>
+                            <p class="card-text text-success">350$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j5.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Wash</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j12.png" class="card-img-top" alt="Women's Ethnic Sets">
+                       
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">550$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j7.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Wash & Beauty</h5>
+                            <p class="card-text text-success">Min. 65% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j1111.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Diamond Ring</h5>
+                            <p class="card-text text-success">230$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j3.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Black Necklace</h5>
+                            <p class="card-text text-success">180$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j10.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">Min. 90% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j111.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Diamond Ring</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j2.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">340$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j21.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessin Stich 2*</h5>
+                            <p class="card-text text-success">260$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j14.png" class="card-img-top" alt="DSLR & Mirrorless" style="width: 130px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Camera</h5>
+                            <p class="card-text text-success">150$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j18.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Bag</h5>
+                            <p class="card-text text-success">Min. 50% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j16.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Baby Product</h5>
+                            <p class="card-text text-success">310$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j4.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Bottle of Medicine</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j6.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Beauty Product</h5>
+                            <p class="card-text text-success">290$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j6.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Beauty Product</h5>
+                            <p class="card-text text-success">Min. 75% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j20.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">240$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j21.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessin Stich 6*</h5>
+                            <p class="card-text text-success">610$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j22.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">Min. 45% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j1111.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Diamond Ring</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j222.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">190$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j17.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Bag</h5>
+                            <p class="card-text text-success">240$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j23.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessin Stich 11*</h5>
+                            <p class="card-text text-success">470$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j9.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">Min. 65% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j4.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Bottle of Medicine</h5>
+                            <p class="card-text text-success">310$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j5.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Wash</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j6.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Beauty Product</h5>
+                            <p class="card-text text-success">660$/-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="container pt-4">
+        
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j1.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Diamond Ring</h5>
+                            <p class="card-text text-success">150$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j2.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">Min. 35% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j9.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">250$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j17.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Bag</h5>
+                            <p class="card-text text-success">350$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j5.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Wash</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j12.png" class="card-img-top" alt="Women's Ethnic Sets">
+                       
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">550$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j7.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Wash & Beauty</h5>
+                            <p class="card-text text-success">Min. 65% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j1111.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Diamond Ring</h5>
+                            <p class="card-text text-success">230$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j3.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Black Necklace</h5>
+                            <p class="card-text text-success">180$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j10.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">Min. 90% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j111.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Diamond Ring</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j2.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">340$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j21.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessin Stich 2*</h5>
+                            <p class="card-text text-success">260$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j14.png" class="card-img-top" alt="DSLR & Mirrorless" style="width: 130px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Camera</h5>
+                            <p class="card-text text-success">150$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j18.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Bag</h5>
+                            <p class="card-text text-success">Min. 50% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j16.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Baby Product</h5>
+                            <p class="card-text text-success">310$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j4.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Bottle of Medicine</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j6.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Beauty Product</h5>
+                            <p class="card-text text-success">290$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j6.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Beauty Product</h5>
+                            <p class="card-text text-success">Min. 75% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j20.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">240$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j21.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessin Stich 6*</h5>
+                            <p class="card-text text-success">610$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j22.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">Min. 45% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j1111.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Diamond Ring</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j222.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">190$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j17.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Bag</h5>
+                            <p class="card-text text-success">240$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j23.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessin Stich 11*</h5>
+                            <p class="card-text text-success">470$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j9.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">Min. 65% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j4.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Bottle of Medicine</h5>
+                            <p class="card-text text-success">310$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j5.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Wash</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j6.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Beauty Product</h5>
+                            <p class="card-text text-success">660$/-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="container pt-4">
+        
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j1.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Diamond Ring</h5>
+                            <p class="card-text text-success">150$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j2.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">Min. 35% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j9.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">250$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j17.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Bag</h5>
+                            <p class="card-text text-success">350$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j5.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Wash</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j12.png" class="card-img-top" alt="Women's Ethnic Sets">
+                       
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">550$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j7.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Wash & Beauty</h5>
+                            <p class="card-text text-success">Min. 65% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j1111.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Diamond Ring</h5>
+                            <p class="card-text text-success">230$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j3.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Black Necklace</h5>
+                            <p class="card-text text-success">180$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j10.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">Min. 90% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j111.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Diamond Ring</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j2.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">340$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j21.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessin Stich 2*</h5>
+                            <p class="card-text text-success">260$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j14.png" class="card-img-top" alt="DSLR & Mirrorless" style="width: 130px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Camera</h5>
+                            <p class="card-text text-success">150$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j18.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Bag</h5>
+                            <p class="card-text text-success">Min. 50% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j16.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Baby Product</h5>
+                            <p class="card-text text-success">310$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j4.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Bottle of Medicine</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j6.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Beauty Product</h5>
+                            <p class="card-text text-success">290$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j6.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Beauty Product</h5>
+                            <p class="card-text text-success">Min. 75% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j20.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">240$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j21.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessin Stich 6*</h5>
+                            <p class="card-text text-success">610$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j22.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">Min. 45% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j1111.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Diamond Ring</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j222.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">190$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j17.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Bag</h5>
+                            <p class="card-text text-success">240$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j23.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessin Stich 11*</h5>
+                            <p class="card-text text-success">470$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j9.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">Min. 65% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j4.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Bottle of Medicine</h5>
+                            <p class="card-text text-success">310$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j5.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Wash</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j6.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Beauty Product</h5>
+                            <p class="card-text text-success">660$/-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="container pt-4">
+        
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j1.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Diamond Ring</h5>
+                            <p class="card-text text-success">150$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j2.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">Min. 35% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j9.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">250$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j17.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Bag</h5>
+                            <p class="card-text text-success">350$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j5.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Wash</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j12.png" class="card-img-top" alt="Women's Ethnic Sets">
+                       
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">550$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j7.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Wash & Beauty</h5>
+                            <p class="card-text text-success">Min. 65% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j1111.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Diamond Ring</h5>
+                            <p class="card-text text-success">230$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j3.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Black Necklace</h5>
+                            <p class="card-text text-success">180$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j10.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">Min. 90% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j111.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Diamond Ring</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j2.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">340$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j21.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessin Stich 2*</h5>
+                            <p class="card-text text-success">260$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j14.png" class="card-img-top" alt="DSLR & Mirrorless" style="width: 130px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Camera</h5>
+                            <p class="card-text text-success">150$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j18.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Bag</h5>
+                            <p class="card-text text-success">Min. 50% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j16.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Baby Product</h5>
+                            <p class="card-text text-success">310$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j4.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Bottle of Medicine</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j6.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Beauty Product</h5>
+                            <p class="card-text text-success">290$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j6.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Beauty Product</h5>
+                            <p class="card-text text-success">Min. 75% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j20.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">240$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j21.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessin Stich 6*</h5>
+                            <p class="card-text text-success">610$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j22.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">Min. 45% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j1111.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Diamond Ring</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j222.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Necklace</h5>
+                            <p class="card-text text-success">190$/-</p>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j17.png" class="card-img-top" alt="Cameras">
+                        <div class="card-body">
+                            <h5 class="card-title">Bag</h5>
+                            <p class="card-text text-success">240$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j23.png" class="card-img-top" alt="DSLR & Mirrorless">
+                        <div class="card-body">
+                            <h5 class="card-title">Dessin Stich 11*</h5>
+                            <p class="card-text text-success">470$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j9.png" class="card-img-top" alt="Gas Stoves">
+                        <div class="card-body">
+                            <h5 class="card-title">Hand Wash</h5>
+                            <p class="card-text text-success">Min. 65% Off</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j4.png" class="card-img-top" alt="Shoe Rack">
+                        <div class="card-body">
+                            <h5 class="card-title">Bottle of Medicine</h5>
+                            <p class="card-text text-success">310$/-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j5.png" class="card-img-top" alt="Women's Sarees">
+                        <div class="card-body">
+                            <h5 class="card-title">Face Wash</h5>
+                            <p class="card-text text-warning">Special Offer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 d-flex">
+                    <div class="card">
+                        <img src="j6.png" class="card-img-top" alt="Women's Ethnic Sets">
+                        <div class="card-body">
+                            <h5 class="card-title">Beauty Product</h5>
+                            <p class="card-text text-success">660$/-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+<footer>
+    <div class="icon-container">
+        <div class="icon">
+            <a href="page1.html">
+                <span class="cheng1"><i class="fa-solid fa-magnifying-glass"></i></span> <br>
+                <span class="cheng11">Search</span> 
+            </a> 
+        </div>
+        <div class="icon">
+            <a href="100INR.html">
+                <span  class="cheng2"><i class="fa-solid fa-trophy"></i></span> <br>
+                <span class="cheng22">Win</span> 
+            </a>
+        </div>
+        <div class="icon">
+            <a href="dashboard.php">
+            <span  class="cheng3"><i class="fa-solid fa-house-user"></i></span> <br>
+            <span class="cheng33">Home</span>  
+            </a>
+        </div>
+    </div>
+</footer>  <!-- End footer -->
+
+
+</body>
+</html>
